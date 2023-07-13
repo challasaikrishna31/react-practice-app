@@ -1,25 +1,47 @@
 import logo from './logo.svg';
 import './App.css';
+import StopWatch from './Components/StopWatch';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet
+} from "react-router-dom";
+import Navbar from './Components/NavBar';
+import Body from './Components/Body';
+import BasicMessage from './Components/BasicMessage';
 
+const AppLayout = () => {
+  return (
+    <div className='flex'>
+      <Navbar />
+      <Body />
+    </div>
+  )
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RouterProvider router={appRouter}></RouterProvider>
   );
 }
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <BasicMessage />
+
+      },
+      {
+        path: "/stopwatch",
+        element: <StopWatch />
+
+      }
+    ]
+  },
+
+]);
 
 export default App;
