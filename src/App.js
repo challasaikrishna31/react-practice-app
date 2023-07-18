@@ -9,12 +9,14 @@ import {
 import Navbar from './Components/NavBar';
 import Body from './Components/Body';
 import BasicMessage from './Components/BasicMessage';
+import ErrorElement from './Components/ErrorElement';
+import EmployeeForm from './Components/EmployeeForm';
 
-const AppLayout = () => {
+const AppLayout = ({ Component }) => {
   return (
     <div className='flex'>
       <Navbar />
-      <Body />
+      {Component ? <Component /> : <Body />}
     </div>
   )
 }
@@ -28,6 +30,7 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <AppLayout Component={ErrorElement} />,
     children: [
       {
         path: "/",
@@ -37,6 +40,11 @@ const appRouter = createBrowserRouter([
       {
         path: "/stopwatch",
         element: <StopWatch />
+
+      },
+      {
+        path: "/employeeform",
+        element: <EmployeeForm />
 
       }
     ]

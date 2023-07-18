@@ -22,13 +22,11 @@ const BasicMessage = () => {
     }, [action])
 
     return (
-        <div className='h-screen flex items-center justify-center'>
-            <div class="p-2 m-2 flex flex-col justify-around bg-gray-100 w-96 h-96 items-center">
-                <div class="font-bold">
+        <div className="p-2 m-2 flex flex-col justify-around bg-gray-100 w-96 h-96 items-center">
+            <div className="font-bold">
                     Hello Welcome!!!!!
                 </div>
 
-            </div>
         </div>
 
     )

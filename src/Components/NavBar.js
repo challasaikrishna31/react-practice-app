@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className="bg-slate-300 p-2 m-2 rounded-sm">
+        <div className="bg-slate-300 p-2 m-2 rounded-lg w-48 h-screen">
             <ul className="flex flex-col">
                 <li className="mb-2">
                     <Link to="/">Home</Link>
@@ -12,13 +12,13 @@ const Navbar = () => {
                     <Link to="/stopwatch">Stop Watch</Link>
                 </li>
                 <li className="mb-2">
-                    <Link to="/about">About</Link>
+                    <Link to="/employeeform">Employee Form</Link>
                 </li>
                 <li className="mb-2">
                     <Link to="/contact">Contact</Link>
                 </li>
             </ul>
-        </nav>
+        </div>
     );
 };
 
