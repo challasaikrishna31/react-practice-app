@@ -4,7 +4,7 @@ import { useRouteError } from 'react-router-dom';
 const ErrorElement = () => {
     const err = useRouteError();
     return (
-        <div className='flex items-center justify-center bg-slate-500 w-full h-screen m-2 p-2 rounded-lg'>
+        <div className='flex items-center justify-center bg-slate-200 w-full h-screen m-2 p-2 rounded-lg'>
             <div className="flex flex-col bg-red-400 p-6 rounded-lg w-96 h-96  items-center justify-center">
                 <div className='text-lg font-bold'>Oops!!</div>
                 <div className='font-bold'>Something Went Wrong!!</div>
