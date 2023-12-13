@@ -6,7 +6,8 @@ const Navbar = () => {
         { label: 'Home', path: '/' },
         { label: 'Stop Watch', path: '/stopwatch' },
         { label: 'Employee Form', path: '/employeeform' },
-        { label: 'Contact', path: '/contact' },
+        { label: 'Prop Drilling', path: '/propdrilling' },
+        { label: 'Contact Error Page', path: '/contact' },
     ];
     return (
         <div className="  w-64 flex flex-col m-2 rounded-lg bg-slate-50">

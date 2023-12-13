@@ -11,6 +11,7 @@ import Body from './Components/Body';
 import BasicMessage from './Components/BasicMessage';
 import ErrorElement from './Components/ErrorElement';
 import EmployeeForm from './Components/EmployeeForm';
+import PropDrilling from './Components/PropDrilling/PropDrilling';
 
 const AppLayout = ({ Component }) => {
   return (
@@ -45,6 +46,11 @@ const appRouter = createBrowserRouter([
       {
         path: "/employeeform",
         element: <EmployeeForm />
+
+      },
+      {
+        path: "/propdrilling",
+        element: <PropDrilling />
 
       }
     ]
