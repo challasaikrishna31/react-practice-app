@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react';
 
 const Level1Child2 = ({ parentProp, increment }) => {
-    const [clild1Prop, setChild1Prop] = useState(0);
     useEffect(() => {
         console.log("child2-useEffect");
     }, [])

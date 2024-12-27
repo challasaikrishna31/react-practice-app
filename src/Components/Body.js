@@ -1,5 +1,4 @@
-import React from 'react'
-import StopWatch from './StopWatch'
+import React from 'react';
 import { Outlet } from "react-router-dom";
 const Body = () => {
     return (

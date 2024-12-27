@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 const experienceObj = {
     id: uuidv4(),
@@ -24,7 +24,7 @@ const EmployeeForm = () => {
         setEmployeeDetails((prev) => [...prev, { ...experienceObj, id: uuidv4() }])
     }
     const handleDelete = (id) => {
-        setEmployeeDetails((prev) => prev.filter(x => x.id != id));
+        setEmployeeDetails((prev) => prev.filter(x => x.id !== id));
     }
     const handleSubmit = (e) => {
         e.preventDefault();

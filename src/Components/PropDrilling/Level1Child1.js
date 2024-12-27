@@ -1,7 +1,6 @@
-import React, { memo, useEffect, useState } from 'react'
+import React, { memo, useEffect } from 'react';
 
 const Level1Child1 = ({ parentProp2 }) => {
-    const [clild1Prop, setChild1Prop] = useState(0);
     useEffect(() => {
         console.log("child1-useEffect");
     }, [])

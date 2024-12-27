@@ -15,6 +15,7 @@ const PropDrilling = () => {
         setParentProp(prev => prev + 1)
         setParentProp(prev => prev + 1)
     }
+
     const increment2 = () => {
         setParentProp2(prev => prev + 1)
     }

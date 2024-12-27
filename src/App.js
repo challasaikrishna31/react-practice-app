@@ -1,17 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import StopWatch from './Components/StopWatch';
 import {
   createBrowserRouter,
   RouterProvider,
-  Outlet
 } from "react-router-dom";
-import Navbar from './Components/NavBar';
-import Body from './Components/Body';
+import './App.css';
 import BasicMessage from './Components/BasicMessage';
-import ErrorElement from './Components/ErrorElement';
+import Body from './Components/Body';
 import EmployeeForm from './Components/EmployeeForm';
+import ErrorElement from './Components/ErrorElement';
+import Navbar from './Components/NavBar';
 import PropDrilling from './Components/PropDrilling/PropDrilling';
+import StopWatch from './Components/StopWatch';
 
 const AppLayout = ({ Component }) => {
   return (
